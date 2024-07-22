@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Phone Book</title>
+<link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+<style>
+body {background-color: #4CAF50; color: #ffffff; padding-top: 20px;}.navbar {margin-bottom: 20px;border-radius: 15px; background-color: #ffffff;}
+  .navbar-light .navbar-nav .nav-link {color: #000000;}.navbar-light .navbar-nav .nav-link:hover {color: #e6e6e6;}  .container {max-width: 600px;}
+  .form-container {  border: 1px solid #ddd;  padding: 20px;  border-radius: 5px; background-color: #4CAF50;   color: #ffffff;  }
+  .form-container h2 { margin-bottom: 20px;  }
+  .form-group label {  font-weight: bold;    color: #ffffff;  }
+  .btn-primary {  background-color: #ffffff;  color: #4CAF50;   border-color: #4CAF50;  }
+        .btn-primary:hover {  background-color: #e0e0e0;  border-color: #4CAF50;  }
+  .form-row .col-form-label {text-align: right;   }
+  .form-row .form-control {    width: 100%;     }
+  </style>
+</head>
+<body>
+    <div class="container">
+        <h1 class="text-center">Phone Book</h1>
+        <nav class="navbar navbar-expand-md navbar-light bg-light">
+            <div class="collapse navbar-collapse">
+                <ul class="navbar-nav mx-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Add New</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">View All</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Profile</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Contact Us</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+        <div class="form-container">
+            <h2 class="text-center">Update User</h2>
+            <form>
+                <div class="form-row">
+                    <div class="form-group col-md-4">
+                        <label for="name" class="col-form-label">Name</label>
+                    </div>
+                    <div class="form-group col-md-8">
+                        <input type="text" class="form-control" id="name" placeholder="Enter your name">
+                    </div>
+                </div>
+                <div class="form-row">
+                    <div class="form-group col-md-4">
+                        <label for="designation" class="col-form-label">Designation</label>
+                    </div>
+                    <div class="form-group col-md-8">
+                        <input type="text" class="form-control" id="designation" placeholder="Enter your designation">
+                    </div>
+                </div>
+                <div class="form-row">
+                    <div class="form-group col-md-4">
+                        <label for="phone" class="col-form-label">Phone</label>
+                    </div>
+                    <div class="form-group col-md-8">
+                        <input type="tel" class="form-control" id="phone" placeholder="Enter your phone number">
+                    </div>
+                </div>
+                <div class="form-row">
+                    <div class="form-group col-md-4">
+                        <label for="address" class="col-form-label">Address</label>
+                    </div>
+                    <div class="form-group col-md-8">
+                        <input type="text" class="form-control" id="address" placeholder="Enter your address">
+                    </div>
+                </div>
+                <button type="submit" class="btn btn-primary btn-block">Update</button>
+            </form>
+        </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
